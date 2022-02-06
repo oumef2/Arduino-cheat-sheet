@@ -2,7 +2,6 @@
 #define A0_pin A0 
 #define D0_pin 13
 
-#include
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -18,5 +17,5 @@ void loop() {
   int ValeurLED = map (noise, 0, 1023, 0, 255);
   Serial.println("read noise : ");
   Serial.println(noise);
-  
+  delay(500);
 }
